@@ -1,27 +1,5 @@
 function SiteReports() {
-  const reports = [
-    {
-      site: "Westlands Commercial Site",
-      date: "24 Sep 2026",
-      workers: 28,
-      work: "Foundation work completed",
-      status: "Submitted",
-    },
-    {
-      site: "Karen Residential Project",
-      date: "23 Sep 2026",
-      workers: 19,
-      work: "Wall construction in progress",
-      status: "Submitted",
-    },
-    {
-      site: "Ruiru Housing Project",
-      date: "22 Sep 2026",
-      workers: 15,
-      work: "Site preparation and excavation",
-      status: "Pending",
-    },
-  ];
+  // from backend 
 
   return (
     <div

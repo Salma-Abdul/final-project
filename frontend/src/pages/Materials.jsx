@@ -1,30 +1,5 @@
 function Materials() {
-  const materials = [
-    {
-      name: "Cement",
-      category: "Building Material",
-      quantity: "120 bags",
-      status: "In Stock",
-    },
-    {
-      name: "Steel Bars",
-      category: "Structural",
-      quantity: "85 pieces",
-      status: "In Stock",
-    },
-    {
-      name: "Sand",
-      category: "Building Material",
-      quantity: "18 tonnes",
-      status: "Low Stock",
-    },
-    {
-      name: "Concrete Blocks",
-      category: "Masonry",
-      quantity: "450 pieces",
-      status: "In Stock",
-    },
-  ];
+  // use from backend
 
   return (
     <div

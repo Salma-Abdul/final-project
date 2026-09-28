@@ -52,7 +52,7 @@ function Dashboard() {
               fontSize: "14px",
             }}
           >
-            ● Online
+            {/* ● Online */} only show when someone is logged in
           </div>
         </div>
 

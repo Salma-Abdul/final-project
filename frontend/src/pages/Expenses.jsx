@@ -1,35 +1,5 @@
 function Expenses() {
-  const expenses = [
-    {
-      description: "Cement purchase",
-      project: "Westlands Commercial Site",
-      amount: "KES 85,000",
-      date: "24 Sep 2026",
-      status: "Approved",
-    },
-    {
-      description: "Transport costs",
-      project: "Karen Residential Project",
-      amount: "KES 32,500",
-      date: "23 Sep 2026",
-      status: "Approved",
-    },
-    {
-      description: "Sand delivery",
-      project: "Ruiru Housing Project",
-      amount: "KES 18,000",
-      date: "22 Sep 2026",
-      status: "Pending",
-    },
-    {
-      description: "Site equipment",
-      project: "Westlands Commercial Site",
-      amount: "KES 45,000",
-      date: "21 Sep 2026",
-      status: "Pending",
-    },
-  ];
-
+// should come from backend 
   return (
     <div
       style={{

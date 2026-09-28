@@ -1,25 +1,5 @@
  function Projects() {
-  const projects = [
-    {
-      name: "Westlands Commercial Site",
-      location: "Westlands, Nairobi",
-      status: "In Progress",
-      progress: "72%",
-    },
-    {
-      name: "Karen Residential Project",
-      location: "Karen, Nairobi",
-      status: "In Progress",
-      progress: "48%",
-    },
-    {
-      name: "Ruiru Housing Project",
-      location: "Ruiru, Kiambu",
-      status: "Planning",
-      progress: "20%",
-    },
-  ];
-
+  // from backend 
   return (
     <div
       style={{
