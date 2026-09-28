@@ -3,16 +3,10 @@ import { useState } from "react";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [role, setRole] = useState("Company Owner");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    console.log({
-      email,
-      password,
-      role,
-    });
+    console.log({ email, password });
   };
 
   return (
@@ -20,113 +14,87 @@ function Login() {
       style={{
         minHeight: "100vh",
         display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        background: "#eaf4fb",
-        padding: "30px",
+        background: "#f4f8f7",
         fontFamily: "Arial, sans-serif",
       }}
     >
+      {/* Left Side */}
       <div
         style={{
-          width: "100%",
-          maxWidth: "1000px",
-          minHeight: "580px",
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          background: "white",
-          borderRadius: "18px",
-          overflow: "hidden",
-          boxShadow: "0 10px 35px rgba(18, 59, 93, 0.15)",
+          flex: 1,
+          background: "#123c3a",
+          color: "white",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "50px",
+          textAlign: "center",
         }}
       >
-        {/* Left Side */}
-        <div
+        <h1 style={{ fontSize: "38px", marginBottom: "15px" }}>
+          BIDMAH
+        </h1>
+
+        <h2 style={{ fontSize: "30px", marginBottom: "20px" }}>
+          Construction Operations
+        </h2>
+
+        <p
           style={{
-            background: "#123b5d",
-            color: "white",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            textAlign: "center",
-            padding: "50px",
+            fontSize: "16px",
+            lineHeight: "1.6",
+            maxWidth: "420px",
           }}
         >
-          <div
-            style={{
-              fontSize: "30px",
-              fontWeight: "bold",
-              marginBottom: "35px",
-            }}
-          >
-            BIDMAH
-          </div>
+          Manage projects, site reports, materials, expenses and
+          attendance from one simple dashboard.
+        </p>
 
+        <p style={{ marginTop: "25px", opacity: 0.8 }}>
+          Simple • Mobile • Accountable
+        </p>
+      </div>
+
+      {/* Right Side */}
+      <div
+        style={{
+          flex: 1,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "40px",
+        }}
+      >
+        <div
+          style={{
+            width: "100%",
+            maxWidth: "500px",
+            background: "white",
+            padding: "45px",
+            borderRadius: "15px",
+            boxShadow: "0 5px 25px rgba(0,0,0,0.08)",
+          }}
+        >
           <h1
             style={{
-              fontSize: "36px",
-              margin: "0 0 20px",
-              lineHeight: "1.2",
+              textAlign: "center",
+              color: "#173b39",
+              marginBottom: "10px",
             }}
           >
-            Construction
-            <br />
-            Operations
+            Welcome back
           </h1>
 
           <p
             style={{
-              fontSize: "15px",
-              lineHeight: "1.7",
-              maxWidth: "350px",
-              color: "#eaf4fb",
+              textAlign: "center",
+              color: "#71807f",
+              marginBottom: "30px",
             }}
           >
-            Manage projects, site reports, materials, expenses
-            and attendance from one simple dashboard.
+            Sign in to your Bidmah account
           </p>
-
-          <p
-            style={{
-              marginTop: "30px",
-              fontSize: "14px",
-              color: "#b9d9ee",
-            }}
-          >
-            Simple • Mobile • Accountable
-          </p>
-        </div>
-
-        {/* Right Side */}
-        <div
-          style={{
-            padding: "55px 50px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <div style={{ textAlign: "center", marginBottom: "30px" }}>
-            <h2
-              style={{
-                margin: "0 0 10px",
-                color: "#123b5d",
-                fontSize: "30px",
-              }}
-            >
-              Welcome back
-            </h2>
-
-            <p
-              style={{
-                margin: 0,
-                color: "#71808a",
-              }}
-            >
-              Sign in to your Bidmah account
-            </p>
-          </div>
 
           <form onSubmit={handleSubmit}>
             {/* Email */}
@@ -134,7 +102,7 @@ function Login() {
               style={{
                 display: "block",
                 marginBottom: "8px",
-                color: "#123b5d",
+                color: "#173b39",
                 fontWeight: "bold",
               }}
             >
@@ -146,14 +114,15 @@ function Login() {
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
               style={{
                 width: "100%",
-                padding: "15px",
-                border: "1px solid #c9dce9",
-                borderRadius: "9px",
-                outline: "none",
+                padding: "14px",
                 marginBottom: "20px",
-                fontSize: "14px",
+                border: "1px solid #d5e0de",
+                borderRadius: "9px",
+                boxSizing: "border-box",
+                fontSize: "15px",
               }}
             />
 
@@ -162,7 +131,7 @@ function Login() {
               style={{
                 display: "block",
                 marginBottom: "8px",
-                color: "#123b5d",
+                color: "#173b39",
                 fontWeight: "bold",
               }}
             >
@@ -174,58 +143,25 @@ function Login() {
               placeholder="Enter your password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              required
               style={{
                 width: "100%",
-                padding: "15px",
-                border: "1px solid #c9dce9",
+                padding: "14px",
+                marginBottom: "25px",
+                border: "1px solid #d5e0de",
                 borderRadius: "9px",
-                outline: "none",
-                marginBottom: "20px",
-                fontSize: "14px",
+                boxSizing: "border-box",
+                fontSize: "15px",
               }}
             />
 
-            {/* Role */}
-            <label
-              style={{
-                display: "block",
-                marginBottom: "8px",
-                color: "#123b5d",
-                fontWeight: "bold",
-              }}
-            >
-              Role
-            </label>
-
-            <select
-              value={role}
-              onChange={(e) => setRole(e.target.value)}
-              style={{
-                width: "100%",
-                padding: "15px",
-                border: "1px solid #c9dce9",
-                borderRadius: "9px",
-                outline: "none",
-                marginBottom: "25px",
-                fontSize: "14px",
-                background: "white",
-              }}
-            >
-              <option>Company Owner</option>
-              <option>Project Manager</option>
-              <option>Site Supervisor</option>
-              <option>Storekeeper</option>
-              <option>Procurement Officer</option>
-              <option>Foreman</option>
-            </select>
-
-            {/* Button */}
+            {/* Sign In */}
             <button
               type="submit"
               style={{
                 width: "100%",
-                padding: "15px",
-                background: "#1976d2",
+                padding: "14px",
+                background: "#159a8c",
                 color: "white",
                 border: "none",
                 borderRadius: "9px",
@@ -242,7 +178,7 @@ function Login() {
             style={{
               textAlign: "center",
               marginTop: "25px",
-              color: "#9aa7ad",
+              color: "#9aa7a7",
               fontSize: "12px",
             }}
           >
