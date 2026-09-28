@@ -1,34 +1,5 @@
 function Documents() {
-  const documents = [
-    {
-      name: "Westlands Site Report.pdf",
-      type: "Site Report",
-      project: "Westlands Commercial Site",
-      date: "24 Sep 2026",
-      status: "Available",
-    },
-    {
-      name: "Material Delivery.pdf",
-      type: "Material Record",
-      project: "Karen Residential Project",
-      date: "23 Sep 2026",
-      status: "Available",
-    },
-    {
-      name: "Project Budget.pdf",
-      type: "Financial",
-      project: "Ruiru Housing Project",
-      date: "22 Sep 2026",
-      status: "Available",
-    },
-    {
-      name: "Safety Inspection.pdf",
-      type: "Safety",
-      project: "Westlands Commercial Site",
-      date: "20 Sep 2026",
-      status: "Available",
-    },
-  ];
+  // should come from backend
 
   return (
     <div

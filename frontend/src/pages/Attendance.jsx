@@ -1,35 +1,6 @@
 
 function Attendance() {
-  const workers = [
-    {
-      name: "Ahmed Hassan",
-      role: "Site Supervisor",
-      site: "Westlands Commercial Site",
-      time: "7:45 AM",
-      status: "Present",
-    },
-    {
-      name: "Mary Wanjiku",
-      role: "Foreman",
-      site: "Karen Residential Project",
-      time: "7:52 AM",
-      status: "Present",
-    },
-    {
-      name: "John Kamau",
-      role: "Construction Worker",
-      site: "Ruiru Housing Project",
-      time: "8:10 AM",
-      status: "Late",
-    },
-    {
-      name: "Fatima Ali",
-      role: "Storekeeper",
-      site: "Westlands Commercial Site",
-      time: "-",
-      status: "Absent",
-    },
-  ];
+
 
   return (
     <div

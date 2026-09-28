@@ -1,30 +1,5 @@
 function Users() {
-  const users = [
-    {
-      name: "Ahmed Hassan",
-      email: "ahmed@bidmah.com",
-      role: "Company Owner",
-      status: "Active",
-    },
-    {
-      name: "Mary Wanjiku",
-      email: "mary@bidmah.com",
-      role: "Project Manager",
-      status: "Active",
-    },
-    {
-      name: "John Kamau",
-      email: "john@bidmah.com",
-      role: "Site Supervisor",
-      status: "Active",
-    },
-    {
-      name: "Fatima Ali",
-      email: "fatima@bidmah.com",
-      role: "Storekeeper",
-      status: "Inactive",
-    },
-  ];
+// come from backend 
 
   return (
     <div
